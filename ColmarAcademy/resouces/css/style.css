@@ -1,0 +1,401 @@
+html {
+  font-size: 16px;
+  font-family: 'Nunito',sans-serif;
+}
+header div.desktop {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 2rem;
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+header div.desktop span {
+  display: flex;
+  font-size: .75rem;
+}
+nav a {
+  padding-left: 1rem;
+}
+nav {
+  padding-left: 20rem;
+  display: block;
+  text-align: right;
+}
+span h1:last-child {
+  color: teal;
+font-weight: lighter;
+}
+header div.mobile {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  header div.mobile {
+    display: block;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header div.desktop {
+    display: none;
+  }
+}
+div.banner {
+  display: flex;
+  flex-direction: row;
+  background-color: darkslategray;
+  width: 100%;
+  align-items: center;
+}
+div.banner div#study {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+div.banner div#study img {
+ background-repeat: no-repeat;
+ width: 100%;
+}
+div.banner div#text {
+  display: block;
+}
+div#text h1{
+  font-weight: bold;
+  color: seashell;
+  font-size: 3rem;
+  width: 70%;
+}
+div#text h2 {
+  color: seashell;
+  font-size: 1.5rem;
+  width: 70%;
+}
+div.banner button {
+  background-color: lightgray;
+  width: 68%;
+  border: 1px solid seashell;
+}
+div.banner button:hover{
+  background-color: darkgray;
+  transition-delay: 0.07s;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+}
+div.banner button h3 {
+  padding: 0.5rem 0;
+  color: darkslategray;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+@media only screen and (max-width:700px){
+  div.banner div#study {
+    width:100%;
+    padding: 0;
+  }
+  div.banner {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  div#text h1{
+    padding: 2rem 1rem;
+    font-size:3rem;
+    width: 100%;
+    color: white;
+  }
+  div#text h2 {
+    padding-bottom: 1.5rem;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  div.banner button {
+    margin: 0 0 2rem 1rem;
+    width: 90%;
+  }
+  div.banner button h3{
+      padding: 0.25rem 0;
+  }
+}
+div.articles {
+  display: flex;
+  flex-direction: row;
+}
+div.articles div.poster {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+div.articles div.school div#a3 img {
+  width: 75%;
+  height: 80%;
+}
+div.articles div.school img {
+  width: 35%;
+  padding: 1rem;
+  height: 35%;
+}
+div.articles div.poster img{
+  width: 100%;
+}
+div.articles div.poster p {
+  color: dimgray;
+  font-size: 1.2rem;
+}
+div.articles div.poster h5{
+  color: darkslategray;
+}
+.articles div.school {
+  border-left: 1px solid darkslategray;
+  width: 40%;
+  padding: 1rem 0;
+}
+.articles div.school div {
+display: flex;
+flex-direction: row;
+border-bottom: 1px solid black;
+}
+.articles div.school div#content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  border-bottom: none;
+}
+.articles div.school a {
+  color: teal;
+}
+.articles div.school p {
+  font-size: 1.2rem;
+  color: gray;
+  font-weight: lighter;
+}
+.articles div.school div#a3:last-child {
+  background-color: darkslategray;
+  color: seashell;
+  border-bottom: none;
+}
+.articles div.school div#a3 p{
+  color: seashell;
+}
+.articles div.school div#a3 a{
+  color: black;
+}
+
+div.articles div.school-mobile{
+  display: none;
+}
+@media only screen and (max-width: 700px){
+div.articles div.school-mobile {
+  width: 100%;
+  padding: 1rem;
+  display: block;
+  background-color: white;
+}
+div.articles div.school-mobile div {
+  display: block;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+  div.articles .poster{
+    display:none;
+  }
+  div.articles div.school{
+    display: none;
+  }
+  .articles div.school-mobile div#content {
+    width: 100%;
+  }
+  div.articles div.school-mobile img#image {
+    width: 100%;
+    height: 50%;
+  }
+}
+div.learning {
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+  color: seashell;
+  border-top: 1px solid darkslategray;
+  border-bottom: 1px solid darkslategray;
+}
+div.learning span{
+  color: black;
+}
+div.learning div#subjects {
+  padding: 2rem 4.5rem;
+}
+div.learning div#row1{
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+div.learning div#row1 div{
+  background-color: darkslategray;
+  text-align: left;
+  margin-right: 2rem;
+  width: 33%;
+  flex-shrink: 2
+}
+div.learning div#row2{
+display: flex;
+flex-direction: row;
+}
+div.learning div#row2 div {
+  background-color: darkslategray;
+  text-align: left;
+  margin-right: 2rem;
+  width: 33%;
+  height: auto;
+  flex-shrink: 2
+}
+div.learning div#subjects h2 {
+  font-size: 1.7rem;
+  padding-left: 1rem;
+  border-bottom: 1px solid seashell;
+}
+@media only screen and (max-width:700px){
+  div.learning img,
+  div.learning h3 {
+    display: none;
+  }
+  div.learning div#subjects h2{
+    border-bottom: none;
+  }
+  div.learning div#row1,
+  div.learning div#row2{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    margin-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  div.learning div#row1 div,
+  div.learning div#row2 div{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background-color: darkslategray;
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div.learning {
+    padding: 2rem 0;
+    border-top: 1px solid darkslategray;
+  }
+}
+div.items{
+  display: flex;
+  flex-direction: row;
+}
+div.learning div#subjects h3 {
+  color: seashell;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-top: .5rem;
+}
+div.items div.stuff div:first-child{
+  background-color: darkslategray;
+  color: seashell;
+}
+div.learning img {
+  height: auto;
+  width: 100%;
+}
+div.last div.stuff {
+  width: 40%;
+}
+div.last div.stuff div {
+  display: flex;
+  flex-direction: row;
+}
+div.last div.stuff img{
+  width: 35%;
+  padding: 1rem;
+  height: 35%;
+}
+div.last div.stuff h3 {
+  font-size: 1.7rem;
+}
+div.items div.stuff h4{
+  font-size: 1rem;
+  font-weight: lighter;
+}
+div.last div.stuff h5 {
+  color: gray;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+div.last div.stuff div#content{
+  display: block;
+  width: 65%;
+}
+div.last h2{
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2.5rem;
+}
+.last div#video{
+  width: 60%;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  text-align: left;
+}
+div.last p{
+  padding-bottom: 2rem;
+  color: gray;
+}
+div.last h3 {
+  padding-bottom: 0.5rem;
+}
+.last div#video video{
+  width: 100%;
+}
+@media only screen and (max-width:700px){
+  div.last div.stuff{
+    display: none;
+  }
+  div.last div#video{
+    width: 100%;
+    padding: 1rem 0 1.5rem 0;
+  }
+  div.last div#video h3,
+  div.last div#video p {
+    display: none;
+  }
+  div.last {
+    padding-top: 2rem;
+  }
+  div.last h2{
+    padding: 0;
+  }
+}
+footer {
+  border-top: 1px solid gray;
+  width: 100%;
+}
+footer .right {
+  float: right;
+  padding-left: 1.5rem;
+}
+footer .left {
+  float: left;
+}
+footer div {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: darkslategray;
+  font-size: 0.9rem;
+}
+@media only screen and (max-width: 700px){
+  footer{
+border-top: none;
+  }
+  footer .right {
+    display: none;
+  }
+}
